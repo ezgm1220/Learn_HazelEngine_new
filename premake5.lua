@@ -12,6 +12,11 @@ workspace "LearnEngine"		-- 指的是解决方案
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- 添加GLFW的配置文件
+IncludeDir = {}
+IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
+include "Hazel/Vendor/GLFW"
+
 project "Hazel"
 	location "Hazel" -- Hazel这个项目的地址
 	kind "SharedLib" -- 动态库
@@ -19,6 +24,10 @@ project "Hazel"
 
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")	-- 二进制文件输出目录
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")-- obj 文件输出目录
+
+	-- 预处理头文件:
+	pchheader "hzpch.h"
+	pchsource "Hazel/src/hzpch.cpp"
 
 	-- 包含文件列表
 	files
@@ -31,7 +40,15 @@ project "Hazel"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	-- 链接的东西
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"	-- 过滤器.直到下一个过滤器之间都是这个过滤器执行的内容
