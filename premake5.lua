@@ -30,13 +30,14 @@ project "Hazel"
 	-- 附加包含目录
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"	-- 过滤器.直到下一个过滤器之间都是这个过滤器执行的内容
 		cppdialect "C++17"
 		staticruntime "On"	-- 静态链接运行时的库
-		systemversion "10.0.20348.0"	--指定windows SDK版本
+		systemversion "latest"	--指定windows SDK版本
 		
 		defines
 		{
@@ -94,7 +95,7 @@ project "Sandbox"
 	filter "system:windows"	-- 过滤器.直到下一个过滤器之间都是这个过滤器执行的内容
 		cppdialect "C++17"
 		staticruntime "On"	-- 静态链接运行时的库
-		systemversion "10.0.20348.0"	--指定windows SDK版本
+		systemversion "latest"	--指定windows SDK版本
 		
 		defines
 		{
