@@ -9,13 +9,16 @@ workspace "LearnEngine"		-- 指的是解决方案
 		"Dist"	-- 发行版本,剔除日志等功能
 	}
 	
-
+	
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- 添加GLFW的配置文件
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
+IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
+
 include "Hazel/Vendor/GLFW"
+include "Hazel/Vendor/Glad"
 
 project "Hazel"
 	location "Hazel" -- Hazel这个项目的地址
@@ -41,13 +44,15 @@ project "Hazel"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	-- 链接的东西
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -59,7 +64,8 @@ project "Hazel"
 		defines
 		{
 			"HZ_PLATFORM_WINDOWS",
-			"HZ_BUILD_DLL"
+			"HZ_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		-- 自动添加dll

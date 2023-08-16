@@ -1,7 +1,7 @@
 #include "hzpch.h"
 #include "Application.h"
 
-#include <GLFW/glfw3.h>
+#include <glad/glad.h>
 
 namespace Hazel {
 
@@ -10,6 +10,9 @@ namespace Hazel {
 	Application::Application() {
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));// 设置回调函数
+
+		GLuint id;
+		glGenVertexArrays(1, &id);
 	}
 	Application::~Application() {
 
