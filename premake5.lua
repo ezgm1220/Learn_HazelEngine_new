@@ -16,9 +16,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
+IncludeDir["Imgui"] = "Hazel/vendor/imgui"
 
 include "Hazel/Vendor/GLFW"
 include "Hazel/Vendor/Glad"
+include "Hazel/Vendor/imgui"
 
 project "Hazel"
 	location "Hazel" -- Hazel这个项目的地址
@@ -45,7 +47,8 @@ project "Hazel"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.Imgui}"
 	}
 
 	-- 链接的东西
@@ -53,6 +56,7 @@ project "Hazel"
 	{
 		"GLFW",
 		"Glad",
+		"Imgui",
 		"opengl32.lib"
 	}
 

@@ -19,7 +19,11 @@ namespace Hazel {
 		void OnEvent(Event& e);
 
 		void PushLayer(Layer* layer);
-		void PushOverlay(Layer* layer);
+		void PushOverlay(Layer* layer); 
+
+		// 返回窗口引用
+		inline Window& GetWindow() { return *m_Window; }
+		inline static Application& Get() { return *s_Instance; }
 	private:
 		// 窗口关闭处理函数
 		bool OnWindowClose(WindowCloseEvent& e);
@@ -27,6 +31,9 @@ namespace Hazel {
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
+	private:
+		static Application* s_Instance;// 使用单例模式
+
 	};
 
 	Application* CreatApplication();
