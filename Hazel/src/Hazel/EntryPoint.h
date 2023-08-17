@@ -12,6 +12,7 @@ int main(int argc, char** argv) {
 	auto app = Hazel::CreatApplication();
 	app->Run();
 	delete app;
+
 }
 
 #endif

@@ -17,10 +17,12 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
 IncludeDir["Imgui"] = "Hazel/vendor/imgui"
+IncludeDir["glm"] = "Hazel/vendor/glm"
 
 include "Hazel/Vendor/GLFW"
 include "Hazel/Vendor/Glad"
 include "Hazel/Vendor/imgui"
+
 
 project "Hazel"
 	location "Hazel" -- Hazel这个项目的地址
@@ -39,7 +41,9 @@ project "Hazel"
 	files
 	{
 		"%{prj.name}/src/**.h",	-- 两个星号将会递归搜索文件夹子文件
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	-- 附加包含目录
@@ -49,7 +53,8 @@ project "Hazel"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.Imgui}"
+		"%{IncludeDir.Imgui}",
+		"%{IncludeDir.glm}"
 	}
 
 	-- 链接的东西
@@ -115,7 +120,8 @@ project "Sandbox"
 	includedirs
 	{
 		"Hazel/vendor/spdlog/include",
-		"Hazel/src"
+		"Hazel/src",
+		"%{IncludeDir.glm}"
 	}
 
 	-- 将 Hazel 和 Sandbox 链接起来
