@@ -26,6 +26,7 @@ project "Hazel"
 	location "Hazel" -- Hazel这个项目的地址
 	kind "SharedLib" -- 动态库
 	language "C++"	 
+	staticruntime "off"
 
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")	-- 二进制文件输出目录
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")-- obj 文件输出目录
@@ -62,14 +63,14 @@ project "Hazel"
 
 	filter "system:windows"	-- 过滤器.直到下一个过滤器之间都是这个过滤器执行的内容
 		cppdialect "C++17"
-		staticruntime "On"	-- 静态链接运行时的库
 		systemversion "latest"	--指定windows SDK版本
 		
 		defines
 		{
 			"HZ_PLATFORM_WINDOWS",
 			"HZ_BUILD_DLL",
-			"GLFW_INCLUDE_NONE"
+			"GLFW_INCLUDE_NONE",
+			"HZ_DEBUG"
 		}
 
 		-- 自动添加dll
@@ -81,23 +82,24 @@ project "Hazel"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "HZ_DIST"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 project "Sandbox"
 	location "Sandbox" -- Hazel这个项目的地址
 	kind "ConsoleApp" -- 动态库
 	language "C++"	 
+	staticruntime "off"
 
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")	-- 二进制文件输出目录
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")-- obj 文件输出目录
@@ -124,7 +126,6 @@ project "Sandbox"
 
 	filter "system:windows"	-- 过滤器.直到下一个过滤器之间都是这个过滤器执行的内容
 		cppdialect "C++17"
-		staticruntime "On"	-- 静态链接运行时的库
 		systemversion "latest"	--指定windows SDK版本
 		
 		defines
@@ -136,15 +137,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "HZ_DIST"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"

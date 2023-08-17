@@ -4,5 +4,6 @@ C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Layer.cpp;C:\Users\c
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\LayerSatck.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\LayerSatck.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Log.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Log.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\ImGuiOpenGLRenderer.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\Windows\WindowsInput.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\WindowsInput.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\Windows\WindowsWindow.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\WindowsWindow.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\hzpch.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\hzpch.obj
