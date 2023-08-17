@@ -10,12 +10,17 @@ public:
 
 	void OnUpdate() override
 	{
-		HZ_INFO("ExampleLayer::Update");
+		//HZ_INFO("ExampleLayer::Update");
+
+		// ≤‚ ‘:
+		if (Hazel::Input::IsKeyPressed(HZ_KEY_TAB)) {
+			HZ_INFO("TAB is Pressed");
+		}
 	}
 
 	void OnEvent(Hazel::Event& event) override
 	{
-		HZ_TRACE("{0}", event);
+		//HZ_TRACE("{0}", event);
 	}
 
 };
