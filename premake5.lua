@@ -26,9 +26,10 @@ include "Hazel/Vendor/imgui"
 
 project "Hazel"
 	location "Hazel" -- Hazel这个项目的地址
-	kind "SharedLib" -- 动态库
+	kind "StaticLib" -- 动态库/改成静态链接
 	language "C++"	 
-	staticruntime "off"
+	cppdialect "C++17"
+	staticruntime "on"
 
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")	-- 二进制文件输出目录
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")-- obj 文件输出目录
@@ -44,6 +45,11 @@ project "Hazel"
 		"%{prj.name}/src/**.cpp",
 		"%{prj.name}/vendor/glm/glm/**.hpp",
 		"%{prj.name}/vendor/glm/glm/**.inl"
+	}
+
+	defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
 	}
 
 	-- 附加包含目录
@@ -67,7 +73,6 @@ project "Hazel"
 	}
 
 	filter "system:windows"	-- 过滤器.直到下一个过滤器之间都是这个过滤器执行的内容
-		cppdialect "C++17"
 		systemversion "latest"	--指定windows SDK版本
 		
 		defines
@@ -78,12 +83,7 @@ project "Hazel"
 			"HZ_DEBUG"
 		}
 
-		-- 自动添加dll
-		postbuildcommands
-		{
-			-- 拷贝Hazel.dll 到 Sandbox目录中
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
-		}
+
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
@@ -103,8 +103,9 @@ project "Hazel"
 project "Sandbox"
 	location "Sandbox" -- Hazel这个项目的地址
 	kind "ConsoleApp" -- 动态库
+	cppdialect "C++17"
 	language "C++"	 
-	staticruntime "off"
+	staticruntime "on"
 
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")	-- 二进制文件输出目录
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")-- obj 文件输出目录
@@ -121,7 +122,8 @@ project "Sandbox"
 	{
 		"Hazel/vendor/spdlog/include",
 		"Hazel/src",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"Hazel/vendor"
 	}
 
 	-- 将 Hazel 和 Sandbox 链接起来
@@ -131,7 +133,6 @@ project "Sandbox"
 	}
 
 	filter "system:windows"	-- 过滤器.直到下一个过滤器之间都是这个过滤器执行的内容
-		cppdialect "C++17"
 		systemversion "latest"	--指定windows SDK版本
 		
 		defines
