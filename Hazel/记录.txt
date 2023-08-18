@@ -1,2 +1,6 @@
 27
 将上OpenGL的上下文创建抽象出来,跟WindowsWindow分离
+
+30 
+将顶点缓冲和索引缓冲的Buffer分离出来
+通过Buffer将图形API(OpenGL等)联系起来,且使Application不会依赖于这些图形API
