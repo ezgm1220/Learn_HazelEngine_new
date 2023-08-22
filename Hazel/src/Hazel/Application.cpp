@@ -21,6 +21,7 @@ namespace Hazel {
 		m_ImGuiLayer = new ImGuiLayer();
 		PushOverlay(m_ImGuiLayer);
 
+		// äÖÈ¾Êı¾İ
 		m_VertexArray.reset(VertexArray::Create());
 
 		float vertices[3 * 7] = {
