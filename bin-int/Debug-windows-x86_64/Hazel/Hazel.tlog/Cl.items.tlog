@@ -14,6 +14,7 @@ C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\VertexArray
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\OpenGL\OpenGLBuffer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OpenGLBuffer.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\OpenGL\OpenGLContext.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OpenGLContext.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\OpenGL\OpenGLRendererAPI.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OpenGLRendererAPI.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\OpenGL\OpenGLShader.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OpenGLShader.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\OpenGL\OpenGLVertexArray.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OpenGLVertexArray.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\Windows\WindowsInput.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\WindowsInput.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Platform\Windows\WindowsWindow.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\WindowsWindow.obj
