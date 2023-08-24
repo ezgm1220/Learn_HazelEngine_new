@@ -25,4 +25,4 @@
 #include "Hazel/Renderer/OrthographicCamera.h"
 
 //------------------Entry-----------------------
-#include "Hazel/Core/EntryPoint.h"
+//#include "Hazel/Core/EntryPoint.h"
