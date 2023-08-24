@@ -9,7 +9,9 @@ workspace "LearnEngine"		-- 指的是解决方案
 		"Dist"	-- 发行版本,剔除日志等功能
 	}
 	
-	
+require "export-compile-commands"
+
+
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- 添加GLFW的配置文件
@@ -103,7 +105,6 @@ project "Hazel"
 		defines "HZ_DIST"
 		runtime "Release"
 		optimize "On"
-
 project "Sandbox"
 	location "Sandbox" -- Hazel这个项目的地址
 	kind "ConsoleApp" -- 动态库

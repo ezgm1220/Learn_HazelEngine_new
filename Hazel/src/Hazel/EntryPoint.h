@@ -10,9 +10,11 @@ int main(int argc, char** argv) {
 	//但是再main()中初始化日志系统会被包含在App中,后续会改进
 
 	auto app = Hazel::CreatApplication();
-	app->Run();
-	delete app;
 
+	app->Run();
+
+	delete app;
+	 
 }
 
 #endif
