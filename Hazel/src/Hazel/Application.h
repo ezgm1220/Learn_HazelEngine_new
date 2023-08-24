@@ -37,10 +37,13 @@ namespace Hazel {
 	private:
 		// 窗口关闭处理函数
 		bool OnWindowClose(WindowCloseEvent& e);
+		// 窗口大小处理函数
+		bool OnWindowResize(WindowResizeEvent& e);
 	private:
 		std::unique_ptr<Window> m_Window;
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
+		bool m_Minimized = false;
 		LayerStack m_LayerStack;
 		Timestep m_Timestep;
 		float m_lastFrameTime = 0.0f;
