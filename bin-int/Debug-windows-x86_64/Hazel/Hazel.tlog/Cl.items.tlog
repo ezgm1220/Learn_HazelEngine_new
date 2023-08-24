@@ -1,10 +1,10 @@
-C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Application.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Application.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Core\Application.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Application.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Core\Layer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Layer.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Core\LayerSatck.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\LayerSatck.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Core\Log.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Log.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\ImGui\ImGuiBuild.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\ImGuiBuild.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\ImGui\ImGuiLayer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\ImGuiLayer.obj
-C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Layer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Layer.obj
-C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\LayerSatck.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\LayerSatck.obj
-C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Log.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Log.obj
-C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\OrthographicCameraController.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OrthographicCameraController.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\OrthographicCameraController.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OrthographicCameraController.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\Buffer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Buffer.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\OrthographicCamera.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OrthographicCamera.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\RenderCommand.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\RenderCommand.obj
