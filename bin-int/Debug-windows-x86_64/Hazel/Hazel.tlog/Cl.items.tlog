@@ -7,6 +7,8 @@ C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\ImGui\ImGuiLayer.cpp
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\OrthographicCameraController.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OrthographicCameraController.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\Buffer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Buffer.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\OrthographicCamera.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\OrthographicCamera.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\PrespectiveCamera.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\PrespectiveCamera.obj
+C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\PrespectiveCameraController.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\PrespectiveCameraController.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\RenderCommand.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\RenderCommand.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\Renderer.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Renderer.obj
 C:\Users\czzzz\Desktop\graphics\LearnEngine\Hazel\src\Hazel\Renderer\Renderer2D.cpp;C:\Users\czzzz\Desktop\graphics\LearnEngine\bin-int\Debug-windows-x86_64\Hazel\Renderer2D.obj

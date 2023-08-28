@@ -15,7 +15,7 @@ public:
 	virtual void OnImGuiRender() override;
 	void OnEvent(Hazel::Event& e) override;
 private:
-	Hazel::OrthographicCameraController m_CameraController;
+	Hazel::PrespectiveCameraController m_CameraController;
 
 	// Temp
 	Hazel::Ref<Hazel::VertexArray> m_SquareVA;

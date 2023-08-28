@@ -1,6 +1,7 @@
 #pragma once
 
 #include "OrthographicCamera.h"
+#include "PrespectiveCamera.h"
 
 #include "Texture.h"
 
@@ -13,6 +14,7 @@ namespace Hazel {
 		static void Shutdown();
 
 		static void BeginScene(const OrthographicCamera& camera);
+		static void BeginScene(const PrespectiveCamera& camera);
 		static void EndScene();
 
 		// Primitives

@@ -4,6 +4,7 @@
 #include "VertexArray.h"
 #include "Shader.h"
 #include "RenderCommand.h"
+#include "PrespectiveCamera.h"
 
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -60,6 +61,14 @@ namespace Hazel {
 	void Renderer2D::BeginScene(const OrthographicCamera& camera)
 	{
 		
+
+		s_Data->TextureShader->Bind();
+		s_Data->TextureShader->SetMat4("u_ViewProjection", camera.GetViewProjectionMatrix());
+	}
+
+	void Renderer2D::BeginScene(const PrespectiveCamera& camera)
+	{
+
 
 		s_Data->TextureShader->Bind();
 		s_Data->TextureShader->SetMat4("u_ViewProjection", camera.GetViewProjectionMatrix());

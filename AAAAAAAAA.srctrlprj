@@ -3,7 +3,7 @@
     <source_groups>
         <source_group_9f059016-69c4-4935-b0a4-aa7d822d8994>
             <build_file_path>
-                <compilation_db_path>compile_commands/debug.json</compilation_db_path>
+                <compilation_db_path>compile_commands.json</compilation_db_path>
             </build_file_path>
             <exclude_filters>
                 <exclude_filter>vendor/**</exclude_filter>

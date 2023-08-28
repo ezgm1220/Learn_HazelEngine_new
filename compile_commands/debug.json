@@ -121,8 +121,26 @@
 ,
           {
             "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
-            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Application.cpp",
-            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Application.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Application.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Application.cpp"
+            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/Application.cpp",
+            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Application.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Application.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/Application.cpp"
+          }
+,
+          {
+            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
+            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/Layer.cpp",
+            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Layer.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Layer.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/Layer.cpp"
+          }
+,
+          {
+            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
+            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/LayerSatck.cpp",
+            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/LayerSatck.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/LayerSatck.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/LayerSatck.cpp"
+          }
+,
+          {
+            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
+            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/Log.cpp",
+            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Log.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Log.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Core/Log.cpp"
           }
 ,
           {
@@ -139,24 +157,6 @@
 ,
           {
             "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
-            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Layer.cpp",
-            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Layer.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Layer.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Layer.cpp"
-          }
-,
-          {
-            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
-            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/LayerSatck.cpp",
-            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/LayerSatck.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/LayerSatck.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/LayerSatck.cpp"
-          }
-,
-          {
-            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
-            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Log.cpp",
-            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Log.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Log.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Log.cpp"
-          }
-,
-          {
-            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
             "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/Buffer.cpp",
             "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Buffer.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Buffer.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/Buffer.cpp"
           }
@@ -169,6 +169,12 @@
 ,
           {
             "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
+            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp",
+            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/OrthographicCameraController.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/OrthographicCameraController.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp"
+          }
+,
+          {
+            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
             "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/RenderCommand.cpp",
             "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/RenderCommand.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/RenderCommand.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/RenderCommand.cpp"
           }
@@ -177,6 +183,12 @@
             "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
             "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/Renderer.cpp",
             "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Renderer.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Renderer.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/Renderer.cpp"
+          }
+,
+          {
+            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
+            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/Renderer2D.cpp",
+            "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Renderer2D.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/Renderer2D.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src/Hazel/Renderer/Renderer2D.cpp"
           }
 ,
           {
@@ -261,6 +273,12 @@
             "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel",
             "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image/stb_image.cpp",
             "command": "cc -MD -MP -D_CRT_SECURE_NO_WARNINGS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DGLFW_INCLUDE_NONE -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/GLFW/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/Glad/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/imgui -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/stb_image.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Hazel/stb_image.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/stb_image/stb_image.cpp"
+          }
+,
+          {
+            "directory": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Sandbox",
+            "file": "C:/Users/czzzz/Desktop/graphics/LearnEngine/Sandbox/src/Sandbox2D.cpp",
+            "command": "cc -MD -MP -DHZ_PLATFORM_WINDOWS -DHZ_DEBUG -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/spdlog/include -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/src -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor/glm -IC:/Users/czzzz/Desktop/graphics/LearnEngine/Hazel/vendor -m64 -g -o C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Sandbox/Sandbox2D.o -MF C:/Users/czzzz/Desktop/graphics/LearnEngine/bin-int/Debug-windows-x86_64/Sandbox/Sandbox2D.d -c C:/Users/czzzz/Desktop/graphics/LearnEngine/Sandbox/src/Sandbox2D.cpp"
           }
 ,
           {
