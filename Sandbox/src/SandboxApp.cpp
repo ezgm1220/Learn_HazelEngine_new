@@ -11,7 +11,7 @@
 #include "Sandbox2D.h"
 
 class ExampleLayer : public Hazel::Layer
-{
+{// Lets go
 public:
 	ExampleLayer()
 		: Layer("Example"), m_CameraController(1280.0f / 720.0f)
