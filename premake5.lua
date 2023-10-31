@@ -1,6 +1,6 @@
 workspace "LearnEngine"		-- 指的是解决方案
 	
-	architecture "x64"
+	architecture "x86_64"
 
 	configurations
 	{

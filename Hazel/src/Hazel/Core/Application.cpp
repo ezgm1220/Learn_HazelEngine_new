@@ -58,12 +58,13 @@ namespace Hazel {
 		dispatcher.Dispatch<WindowCloseEvent>(HZ_BIND_EVENT_FN(Application::OnWindowClose));
 		dispatcher.Dispatch<WindowResizeEvent>(HZ_BIND_EVENT_FN(Application::OnWindowResize));
 		
-		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin(); )// 反向遍历事件 
+		for (auto it = m_LayerStack.rbegin(); it != m_LayerStack.rend(); ++it)// 反向遍历事件 
 		{
-			(*--it)->OnEvent(e);
+			(*it)->OnEvent(e);
 			if (e.Handled)// 当事件被标示为已处理,终止遍历
 				break;
 		}
+		
 
 		//HZ_CORE_TRACE("{0}", e);
 	}
