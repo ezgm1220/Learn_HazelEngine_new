@@ -23,5 +23,13 @@ private:
 
 	Hazel::Ref<Hazel::Texture2D> m_CheckerboardTexture;
 
+	struct ProfileResult
+	{
+		const char* Name;
+		float Time;
+	};
+
+	std::vector<ProfileResult> m_ProfileResults;// 用来记录我们一个渲染循环中所记录的数据
+
 	glm::vec4 m_SquareColor = { 0.2f, 0.3f, 0.8f, 1.0f };
 }; 

@@ -58,7 +58,7 @@ namespace Hazel {
 		m_Context->Init();// 在此进行真正的初始化
 
 		glfwSetWindowUserPointer(m_Window, &m_Data);
-		SetVSync(true);
+		SetVSync(true);// 开启垂直同步
 
 		// 设置 GLFW 的回调函数
 		glfwSetWindowSizeCallback(m_Window, [](GLFWwindow* window, int width, int height)

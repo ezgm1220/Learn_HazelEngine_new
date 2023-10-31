@@ -88,10 +88,10 @@ namespace Hazel {
 		}
 	}
 
-	void ImGuiLayer::OnImGuiRender()// äÖÈ¾Imgui´°¿Ú
-	{
-		static bool show = true;
-		ImGui::ShowDemoWindow(&show);
-	}
+	//void ImGuiLayer::OnImGuiRender()// äÖÈ¾Imgui´°¿Ú
+	//{
+	//	static bool show = true;
+	//	ImGui::ShowDemoWindow(&show);
+	//}
 
 }

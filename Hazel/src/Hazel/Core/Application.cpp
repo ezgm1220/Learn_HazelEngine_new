@@ -12,7 +12,6 @@ namespace Hazel {
 
 	Application::Application() 
 	{ 
-
 		HZ_CORE_ASSERT(!s_Instance, "Application already exists");
 		s_Instance = this;
 
@@ -22,9 +21,7 @@ namespace Hazel {
 		Renderer::Init();
 
 		m_ImGuiLayer = new ImGuiLayer();
-		PushOverlay(m_ImGuiLayer);
-
-		
+		PushOverlay(m_ImGuiLayer);	
 	}
 	Application::~Application() {
 
