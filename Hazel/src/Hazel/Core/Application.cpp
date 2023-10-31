@@ -15,7 +15,7 @@ namespace Hazel {
 
 	Application::Application() 
 	{ 
-		//HZ_PROFILE_FUNCTION();
+		HZ_PROFILE_FUNCTION();
 
 		HZ_CORE_ASSERT(!s_Instance, "Application already exists");
 		s_Instance = this;
@@ -36,18 +36,24 @@ namespace Hazel {
 
 	void Application::PushLayer(Layer* layer)
 	{
+		HZ_PROFILE_FUNCTION();
+
 		m_LayerStack.PushLayer(layer);
 		layer->OnAttach();
 	}
 
 	void Application::PushOverlay(Layer* layer)
 	{
+		HZ_PROFILE_FUNCTION();
+
 		m_LayerStack.PushOverlay(layer);
 		layer->OnAttach();
 	}
 
-	void Application::OnEvent(Event& e) {
-		
+	void Application::OnEvent(Event& e) 
+	{	
+		HZ_PROFILE_FUNCTION();
+
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(HZ_BIND_EVENT_FN(Application::OnWindowClose));
 		dispatcher.Dispatch<WindowResizeEvent>(HZ_BIND_EVENT_FN(Application::OnWindowResize));
@@ -62,9 +68,13 @@ namespace Hazel {
 		//HZ_CORE_TRACE("{0}", e);
 	}
 
-	void Application::Run() {
+	void Application::Run() 
+	{
+		HZ_PROFILE_FUNCTION();
 
-		while (m_Running) {
+		while (m_Running) 
+		{
+			HZ_PROFILE_SCOPE("RunLoop");
 
 			float time = (float)glfwGetTime();
 			Timestep timestep = time - m_lastFrameTime;
@@ -72,15 +82,22 @@ namespace Hazel {
 
 			if (!m_Minimized)
 			{
-				for (Layer* layer : m_LayerStack)
-					layer->OnUpdate(timestep);
-			}
+				{
+					HZ_PROFILE_SCOPE("LayerStack OnUpdate");
 
-			// 渲染UI 这样渲染的话我们窗口可以独立于渲染窗口,也就是可以在外面显示
-			m_ImGuiLayer->Begin();
-			for (Layer* layer : m_LayerStack)
-				layer->OnImGuiRender();
-			m_ImGuiLayer->End();
+					for (Layer* layer : m_LayerStack)
+						layer->OnUpdate(timestep);
+				}
+
+				m_ImGuiLayer->Begin();
+				{
+					HZ_PROFILE_SCOPE("LayerStack OnImGuiRender");
+
+					for (Layer* layer : m_LayerStack)
+						layer->OnImGuiRender();
+				}
+				m_ImGuiLayer->End();
+			}
 
 			m_Window->OnUpdate();
 
@@ -88,7 +105,9 @@ namespace Hazel {
 	}
 
 
-	bool Application::OnWindowClose(WindowCloseEvent& e) {
+	bool Application::OnWindowClose(WindowCloseEvent& e) 
+	{
+		HZ_PROFILE_FUNCTION();
 
 		m_Running = false;
 		return true;
