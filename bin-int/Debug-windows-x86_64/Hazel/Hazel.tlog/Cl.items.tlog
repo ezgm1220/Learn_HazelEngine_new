@@ -5,6 +5,7 @@ C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Core\Log.cpp;C:\Users\czzzz\Deskt
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\ImGui\ImGuiBuild.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\ImGuiBuild.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\ImGui\ImGuiLayer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\ImGuiLayer.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\Buffer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Buffer.obj
+C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\GraphicsContext.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\GraphicsContext.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\OrthographicCamera.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OrthographicCamera.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\OrthographicCameraController.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OrthographicCameraController.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\RenderCommand.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\RenderCommand.obj

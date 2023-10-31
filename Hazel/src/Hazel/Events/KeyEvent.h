@@ -1,12 +1,11 @@
 #pragma once
 
-#include "Event.h"
+#include "Hazel/Events/Event.h"
 
-#include <sstream>
 
 namespace Hazel {
 
-	class HAZEL_API KeyEvent : public Event
+	class KeyEvent : public Event
 	{
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
@@ -19,7 +18,7 @@ namespace Hazel {
 		int m_KeyCode;// 按键码
 	};
 
-	class HAZEL_API KeyPressedEvent : public KeyEvent
+	class KeyPressedEvent : public KeyEvent
 	{
 	public:
 		KeyPressedEvent(int keycode, int repeatCount)// repeatCount 是否重复计数的状态
@@ -38,7 +37,7 @@ namespace Hazel {
 	private:
 		int m_RepeatCount;
 	};
-	class HAZEL_API KeyTypedEvent : public KeyEvent
+	class KeyTypedEvent : public KeyEvent
 	{
 	public:
 		KeyTypedEvent(int keycode)// repeatCount 是否重复计数的状态
@@ -54,7 +53,7 @@ namespace Hazel {
 		EVENT_CLASS_TYPE(KeyTyped)
 	};
 
-	class HAZEL_API KeyReleasedEvent : public KeyEvent
+	class KeyReleasedEvent : public KeyEvent
 	{
 	public:
 		KeyReleasedEvent(int keycode)

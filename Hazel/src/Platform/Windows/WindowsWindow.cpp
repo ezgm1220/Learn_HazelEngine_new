@@ -1,5 +1,5 @@
 #include "hzpch.h"
-#include "WindowsWindow.h"
+#include "Platform/Windows/WindowsWindow.h"
 
 #include "Hazel/Events/ApplicationEvent.h"
 #include "Hazel/Events/KeyEvent.h"
@@ -9,7 +9,7 @@
 
 namespace Hazel {
 
-	static bool s_GLFWInitialized = false;
+	static uint8_t s_GLFWWindowCount = 0;
 
 	// 定义一个静态的用于错误回调函数的错误函数
 	static void GLFWErrorCallback(int error, const char* description) {
@@ -17,9 +17,9 @@ namespace Hazel {
 		HZ_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
 	}
 
-	Window* Window::Create(const WindowProps& props)
+	Scope<Window> Window::Create(const WindowProps& props)
 	{
-		return new WindowsWindow(props);
+		return CreateScope<WindowsWindow>(props);
 	}
 
 	WindowsWindow::WindowsWindow(const WindowProps& props)
@@ -40,7 +40,7 @@ namespace Hazel {
 
 		HZ_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
-		if (!s_GLFWInitialized)
+		if (s_GLFWWindowCount == 0)
 		{
 			// TODO: glfwTerminate 在系统关闭时终止
 			int success = glfwInit();
@@ -48,13 +48,12 @@ namespace Hazel {
 
 			// 设置GLFW错误回调函数
 			glfwSetErrorCallback(GLFWErrorCallback);
-
-			s_GLFWInitialized = true;
 		}
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
-		
-		m_Context = new OpenGLContext(m_Window);// 在这里不会做任何事,我们会在下面对齐进行初始化
+		++s_GLFWWindowCount;
+
+		m_Context = GraphicsContext::Create(m_Window);// 在这里不会做任何事,我们会在下面对齐进行初始化
 		m_Context->Init();// 在此进行真正的初始化
 
 		glfwSetWindowUserPointer(m_Window, &m_Data);
@@ -167,6 +166,12 @@ namespace Hazel {
 	void WindowsWindow::Shutdown()
 	{
 		glfwDestroyWindow(m_Window);
+		--s_GLFWWindowCount;
+
+		if (s_GLFWWindowCount == 0)
+		{
+			glfwTerminate();
+		}
 	}
 
 	void WindowsWindow::OnUpdate()

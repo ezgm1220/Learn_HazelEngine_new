@@ -4,7 +4,7 @@
 
 namespace Hazel {
 
-	class HAZEL_API Input
+	class Input
 	{
 	public:
 		// ¼üÅÌÊÂ¼ş:
