@@ -1,4 +1,4 @@
-workspace "Hazel"
+workspace "Hazel_Game"
 	architecture "x86_64"
 	startproject "Sandbox"
 
