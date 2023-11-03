@@ -87,15 +87,19 @@ namespace Hazel {
 					HZ_PROFILE_SCOPE("LayerStack OnUpdate");
 
 					for (Layer* layer : m_LayerStack)
+					{
 						layer->OnUpdate(timestep);
+						//HZ_CORE_INFO(layer->GetName());
+					}
 				}
 
 				m_ImGuiLayer->Begin();
 				{
 					HZ_PROFILE_SCOPE("LayerStack OnImGuiRender");
 
-					for (Layer* layer : m_LayerStack)
+					for (Layer* layer : m_LayerStack) {
 						layer->OnImGuiRender();
+					}
 				}
 				m_ImGuiLayer->End();
 			}
