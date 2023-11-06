@@ -26,6 +26,9 @@ namespace Hazel {
 
 		// 返回窗口引用
 		inline Window& GetWindow() { return *m_Window; }
+
+		void Close();
+
 		inline static Application& Get() { return *s_Instance; }
 	private:
 		// 窗口关闭处理函数
