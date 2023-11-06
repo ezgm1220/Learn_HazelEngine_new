@@ -37,37 +37,37 @@ namespace Hazel {
 
 	class Event
 	{
-		friend class EventDispatcher;
 	public:
+		virtual ~Event() = default;
+
+		bool Handled = false;
+
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
 		virtual int GetCategoryFlags() const = 0;
 		virtual std::string ToString() const { return GetName(); }
 
-		inline bool IsInCategory(EventCategory category)// 用来查询事件是否属于给定的类型,可以用来快速过滤事件
+		bool IsInCategory(EventCategory category)
 		{
-			return GetCategoryFlags() & category;// 返回值位false则表示不是该类型
+			return GetCategoryFlags() & category;
 		}
-
-		bool Handled = false;	// 标识事件是否被处理
 	};
 
 	class EventDispatcher
 	{
-		template<typename T>
-		using EventFn = std::function<bool(T&)>;
 	public:
-		EventDispatcher(Event& event)// 传入Event事件
+		EventDispatcher(Event& event)
 			: m_Event(event)
 		{
 		}
 
-		template<typename T>
-		bool Dispatch(EventFn<T> func)
+		// F will be deduced by the compiler
+		template<typename T, typename F>
+		bool Dispatch(const F& func)
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.Handled = func(*(T*)&m_Event);
+				m_Event.Handled = func(static_cast<T&>(m_Event));
 				return true;
 			}
 			return false;
@@ -76,8 +76,8 @@ namespace Hazel {
 		Event& m_Event;
 	};
 
-	inline std::ostream& operator<<(std::ostream& os, const Event& e)// 重载输出流
+	inline std::ostream& operator<<(std::ostream& os, const Event& e)
 	{
-		return os << e.ToString();// 不同的事件ToString的内容不同
+		return os << e.ToString();
 	}
 }
