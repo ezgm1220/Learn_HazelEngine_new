@@ -18,6 +18,7 @@ C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\Texture.cpp;C:\Users\czz
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\VertexArray.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\VertexArray.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Scene\Entity.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Entity.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Scene\Scene.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Scene.obj
+C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Scene\SceneCamera.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\SceneCamera.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\OpenGL\OpenGLBuffer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OpenGLBuffer.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\OpenGL\OpenGLContext.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OpenGLContext.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\OpenGL\OpenGLFramebuffer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OpenGLFramebuffer.obj
