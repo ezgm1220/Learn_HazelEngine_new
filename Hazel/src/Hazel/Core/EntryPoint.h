@@ -5,10 +5,9 @@
 
 extern Hazel::Application* Hazel::CreateApplication();
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
-	Hazel::Log::Init();// 初始化日志系统
-	//但是再main()中初始化日志系统会被包含在App中,后续会改进
+	Hazel::Log::Init();
 
 	HZ_PROFILE_BEGIN_SESSION("Startup", "HazelProfile-Startup.json");
 	auto app = Hazel::CreateApplication();

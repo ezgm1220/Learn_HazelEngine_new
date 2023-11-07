@@ -3,7 +3,6 @@
 #include <string>
 #include <unordered_map>
 
-
 #include <glm/glm.hpp>
 
 namespace Hazel {

@@ -32,17 +32,17 @@ namespace Hazel {
 		// Update scripts
 		{
 			m_Registry.view<NativeScriptComponent>().each([=](auto entity, auto& nsc)
+			{
+				// TODO: Move to Scene::OnScenePlay
+				if (!nsc.Instance)
 				{
-					// TODO: Move to Scene::OnScenePlay
-					if (!nsc.Instance)
-					{
-						nsc.Instance = nsc.InstantiateScript();
-						nsc.Instance->m_Entity = Entity{ entity, this };
-						nsc.Instance->OnCreate();
-					}
+					nsc.Instance = nsc.InstantiateScript();
+					nsc.Instance->m_Entity = Entity{ entity, this };
+					nsc.Instance->OnCreate();
+				}
 
-					nsc.Instance->OnUpdate(ts);
-				});
+				nsc.Instance->OnUpdate(ts);
+			});
 		}
 
 		// Render 2D
@@ -53,7 +53,7 @@ namespace Hazel {
 			for (auto entity : view)
 			{
 				auto [transform, camera] = view.get<TransformComponent, CameraComponent>(entity);
-
+				
 				if (camera.Primary)
 				{
 					mainCamera = &camera.Camera;

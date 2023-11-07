@@ -6,8 +6,12 @@
 #include "Hazel/Core/LayerStack.h"
 #include "Hazel/Events/Event.h"
 #include "Hazel/Events/ApplicationEvent.h"
+
 #include "Hazel/Core/Timestep.h"
+
 #include "Hazel/ImGui/ImGuiLayer.h"
+
+int main(int argc, char** argv);
 
 namespace Hazel {
 
@@ -17,25 +21,21 @@ namespace Hazel {
 		Application(const std::string& name = "Hazel App");
 		virtual ~Application();
 
-		void Run();
-
 		void OnEvent(Event& e);
 
 		void PushLayer(Layer* layer);
-		void PushOverlay(Layer* layer); 
+		void PushOverlay(Layer* layer);
 
-		// 返回窗口引用
-		inline Window& GetWindow() { return *m_Window; }
+		Window& GetWindow() { return *m_Window; }
 
 		void Close();
 
 		ImGuiLayer* GetImGuiLayer() { return m_ImGuiLayer; }
 
-		inline static Application& Get() { return *s_Instance; }
+		static Application& Get() { return *s_Instance; }
 	private:
-		// 窗口关闭处理函数
+		void Run();
 		bool OnWindowClose(WindowCloseEvent& e);
-		// 窗口大小处理函数
 		bool OnWindowResize(WindowResizeEvent& e);
 	private:
 		std::unique_ptr<Window> m_Window;
@@ -43,13 +43,13 @@ namespace Hazel {
 		bool m_Running = true;
 		bool m_Minimized = false;
 		LayerStack m_LayerStack;
-		Timestep m_Timestep;
-		float m_lastFrameTime = 0.0f;
+		float m_LastFrameTime = 0.0f;
 	private:
-		static Application* s_Instance;// 使用单例模式
-
+		static Application* s_Instance;
+		friend int ::main(int argc, char** argv);
 	};
 
+	// To be defined in CLIENT
 	Application* CreateApplication();
 
 }

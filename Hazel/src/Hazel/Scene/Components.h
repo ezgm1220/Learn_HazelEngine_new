@@ -23,7 +23,7 @@ namespace Hazel {
 
 		TransformComponent() = default;
 		TransformComponent(const TransformComponent&) = default;
-		TransformComponent(const glm::mat4& transform)
+		TransformComponent(const glm::mat4 & transform)
 			: Transform(transform) {}
 
 		operator glm::mat4& () { return Transform; }
@@ -48,18 +48,15 @@ namespace Hazel {
 
 		CameraComponent() = default;
 		CameraComponent(const CameraComponent&) = default;
-
 	};
 
 	struct NativeScriptComponent
 	{
 		ScriptableEntity* Instance = nullptr;
 
-		// 声明两个函数指针
-		ScriptableEntity* (*InstantiateScript)();
+		ScriptableEntity*(*InstantiateScript)();
 		void (*DestroyScript)(NativeScriptComponent*);
 
-		// 通过模板去定义这两个函数指针
 		template<typename T>
 		void Bind()
 		{
@@ -67,4 +64,5 @@ namespace Hazel {
 			DestroyScript = [](NativeScriptComponent* nsc) { delete nsc->Instance; nsc->Instance = nullptr; };
 		}
 	};
+
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "hzpch.h"
+#include <sstream>
 
 #include "Hazel/Core/Base.h"
 #include "Hazel/Events/Event.h"
@@ -14,20 +14,20 @@ namespace Hazel {
 		uint32_t Height;
 
 		WindowProps(const std::string& title = "Hazel Engine",
-			uint32_t width = 1280,
-			uint32_t height = 720)
+			        uint32_t width = 1280,
+			        uint32_t height = 720)
 			: Title(title), Width(width), Height(height)
 		{
 		}
 	};
 
-	// 代表桌面系统窗口的界面
+	// Interface representing a desktop system based Window
 	class Window
 	{
 	public:
 		using EventCallbackFn = std::function<void(Event&)>;
 
-		virtual ~Window() {}
+		virtual ~Window() = default;
 
 		virtual void OnUpdate() = 0;
 

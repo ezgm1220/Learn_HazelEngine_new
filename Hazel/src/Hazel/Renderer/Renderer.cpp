@@ -4,7 +4,7 @@
 
 namespace Hazel {
 
-	Renderer::SceneData* Renderer::s_SceneData = new Renderer::SceneData;
+	Scope<Renderer::SceneData> Renderer::s_SceneData = CreateScope<Renderer::SceneData>();
 
 	void Renderer::Init()
 	{
@@ -28,7 +28,7 @@ namespace Hazel {
 	{
 		s_SceneData->ViewProjectionMatrix = camera.GetViewProjectionMatrix();
 	}
-	 
+
 	void Renderer::EndScene()
 	{
 	}

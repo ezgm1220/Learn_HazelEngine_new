@@ -14,7 +14,6 @@ namespace Hazel {
 		{
 			return m_Entity.GetComponent<T>();
 		}
-	// 改用虚函数形式
 	protected:
 		virtual void OnCreate() {}
 		virtual void OnDestroy() {}
@@ -25,3 +24,4 @@ namespace Hazel {
 	};
 
 }
+

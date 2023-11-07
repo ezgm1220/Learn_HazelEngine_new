@@ -71,7 +71,7 @@ namespace Hazel {
 			e.Handled |= e.IsInCategory(EventCategoryKeyboard) & io.WantCaptureKeyboard;
 		}
 	}
-
+	
 	void ImGuiLayer::Begin()
 	{
 		HZ_PROFILE_FUNCTION();

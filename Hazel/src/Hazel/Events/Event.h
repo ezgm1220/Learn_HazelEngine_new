@@ -1,6 +1,7 @@
 #pragma once
+#include <functional>
 
-#include "hzpch.h"
+#include "Hazel/Debug/Instrumentor.h"
 #include "Hazel/Core/Base.h"
 
 namespace Hazel {
@@ -10,7 +11,7 @@ namespace Hazel {
 	// For the future, a better strategy might be to buffer events in an event
 	// bus and process them during the "event" part of the update stage.
 
-	enum class EventType// 定义了事件类型
+	enum class EventType
 	{
 		None = 0,
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
@@ -19,7 +20,7 @@ namespace Hazel {
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
-	enum EventCategory// 用个二进制数表现状态
+	enum EventCategory
 	{
 		None = 0,
 		EventCategoryApplication    = BIT(0),
@@ -29,7 +30,7 @@ namespace Hazel {
 		EventCategoryMouseButton    = BIT(4)
 	};
 
-#define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::##type; }\
+#define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::type; }\
 								virtual EventType GetEventType() const override { return GetStaticType(); }\
 								virtual const char* GetName() const override { return #type; }
 
@@ -60,7 +61,7 @@ namespace Hazel {
 			: m_Event(event)
 		{
 		}
-
+		
 		// F will be deduced by the compiler
 		template<typename T, typename F>
 		bool Dispatch(const F& func)
@@ -80,4 +81,6 @@ namespace Hazel {
 	{
 		return os << e.ToString();
 	}
+
 }
+

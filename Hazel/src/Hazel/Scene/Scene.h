@@ -17,9 +17,6 @@ namespace Hazel {
 
 		Entity CreateEntity(const std::string& name = std::string());
 
-		// TEMP
-		entt::registry& Reg() { return m_Registry; }
-
 		void OnUpdate(Timestep ts);
 		void OnViewportResize(uint32_t width, uint32_t height);
 	private:

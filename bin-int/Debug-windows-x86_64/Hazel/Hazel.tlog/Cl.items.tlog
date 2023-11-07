@@ -1,7 +1,9 @@
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Core\Application.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Application.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Core\Layer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Layer.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Core\LayerSatck.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\LayerSatck.obj
+C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Core\LayerStack.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\LayerStack.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Core\Log.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Log.obj
+C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Core\Window.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Window.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\ImGui\ImGuiBuild.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\ImGuiBuild.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\ImGui\ImGuiLayer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\ImGuiLayer.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\Buffer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Buffer.obj

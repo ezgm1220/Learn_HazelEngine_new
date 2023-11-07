@@ -5,7 +5,7 @@
 
 namespace Hazel {
 
-	class VertexArray // 继续将顶点数组抽象出来使其与API无关
+	class VertexArray
 	{
 	public:
 		virtual ~VertexArray() {}
