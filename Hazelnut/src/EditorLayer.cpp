@@ -25,7 +25,7 @@ namespace Hazel {
 		m_ActiveScene = CreateRef<Scene>();
 
 		// Entity
-		auto square = m_ActiveScene->CreateEntity("Green Square");
+		auto square = m_ActiveScene->CreateEntity("Green Square");// 在场景下创建实体
 		square.AddComponent<SpriteRendererComponent>(glm::vec4{0.0f, 1.0f, 0.0f, 1.0f});
 
 		m_SquareEntity = square;
@@ -37,7 +37,7 @@ namespace Hazel {
 		auto& cc = m_SecondCamera.AddComponent<CameraComponent>();
 		cc.Primary = false;
 
-		class CameraController : public ScriptableEntity
+		class CameraController : public ScriptableEntity// 继承于脚本实体
 		{
 		public:
 			void OnCreate()
@@ -68,6 +68,8 @@ namespace Hazel {
 
 		m_CameraEntity.AddComponent<NativeScriptComponent>().Bind<CameraController>();
 		m_SecondCamera.AddComponent<NativeScriptComponent>().Bind<CameraController>();
+
+		m_SceneHierarchyPanel.SetContext(m_ActiveScene);// 相当于设置场景
 	}
 
 	void EditorLayer::OnDetach()
@@ -174,6 +176,8 @@ namespace Hazel {
 
 			ImGui::EndMenuBar();
 		}
+
+		m_SceneHierarchyPanel.OnImGuiRender();// 渲染场景UI
 
 		ImGui::Begin("Settings");
 
