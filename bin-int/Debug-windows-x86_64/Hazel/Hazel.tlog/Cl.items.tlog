@@ -30,6 +30,7 @@ C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\OpenGL\OpenGLShader.cpp;C:\Use
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\OpenGL\OpenGLTexture.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OpenGLTexture.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\OpenGL\OpenGLVertexArray.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OpenGLVertexArray.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\Windows\WindowsInput.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\WindowsInput.obj
+C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\Windows\WindowsPlatformUtils.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\WindowsPlatformUtils.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Platform\Windows\WindowsWindow.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\WindowsWindow.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\hzpch.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\hzpch.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\vendor\stb_image\stb_image.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\stb_image.obj
