@@ -8,6 +8,7 @@ C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\ImGui\ImGuiBuild.cpp;C:\Users\czz
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\ImGui\ImGuiLayer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\ImGuiLayer.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Math\Math.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Math.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\Buffer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Buffer.obj
+C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\EditorCamera.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\EditorCamera.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\Framebuffer.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\Framebuffer.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\GraphicsContext.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\GraphicsContext.obj
 C:\Users\czzzz\Desktop\Hazel2D\Hazel\src\Hazel\Renderer\OrthographicCamera.cpp;C:\Users\czzzz\Desktop\Hazel2D\bin-int\Debug-windows-x86_64\Hazel\OrthographicCamera.obj

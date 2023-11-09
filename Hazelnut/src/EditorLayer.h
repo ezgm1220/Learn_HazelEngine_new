@@ -3,6 +3,8 @@
 #include "Hazel.h"
 #include "Panels/SceneHierarchyPanel.h"
 
+#include "Hazel/Renderer/EditorCamera.h"
+
 namespace Hazel {
 
 	class EditorLayer : public Layer
@@ -39,6 +41,8 @@ namespace Hazel {
 		bool m_PrimaryCamera = true;
 
 		Ref<Texture2D> m_CheckerboardTexture;
+
+		EditorCamera m_EditorCamera;
 
 		bool m_ViewportFocused = false, m_ViewportHovered = false;
 
