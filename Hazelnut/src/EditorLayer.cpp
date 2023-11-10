@@ -121,7 +121,7 @@ namespace Hazel {
 		RenderCommand::Clear();
 
 		// Clear our entity ID attachment to -1
-		//m_Framebuffer->ClearAttachment(1, -1);
+		m_Framebuffer->ClearAttachment(1, -1);
 
 		// 更新场景
 		m_ActiveScene->OnUpdateEditor(ts, m_EditorCamera);// 找到主相机,在主相机内进行遍历实体更新场景
@@ -137,7 +137,7 @@ namespace Hazel {
 		if (mouseX >= 0 && mouseY >= 0 && mouseX < (int)viewportSize.x && mouseY < (int)viewportSize.y)
 		{
 			int pixelData = m_Framebuffer->ReadPixel(1, mouseX, mouseY);
-			HZ_CORE_WARN("Pixel data = {0}", pixelData);
+			m_HoveredEntity = pixelData == -1 ? Entity() : Entity((entt::entity)pixelData, m_ActiveScene.get());
 		}
 
 		m_Framebuffer->Unbind();
@@ -229,6 +229,11 @@ namespace Hazel {
 
 		ImGui::Begin("Stats");
 
+		std::string name = "None";
+		if (m_HoveredEntity)
+			name = m_HoveredEntity.GetComponent<TagComponent>().Tag;
+		ImGui::Text("Hovered Entity: %s", name.c_str());
+
 		auto stats = Renderer2D::GetStats();
 		ImGui::Text("Renderer2D Stats:");
 		ImGui::Text("Draw Calls: %d", stats.DrawCalls);
@@ -249,7 +254,7 @@ namespace Hazel {
 		ImVec2 viewportPanelSize = ImGui::GetContentRegionAvail();
 		m_ViewportSize = { viewportPanelSize.x, viewportPanelSize.y };
 
-		uint64_t textureID = m_Framebuffer->GetColorAttachmentRendererID(0);
+		uint64_t textureID = m_Framebuffer->GetColorAttachmentRendererID( );
 		ImGui::Image(reinterpret_cast<void*>(textureID), ImVec2{ m_ViewportSize.x, m_ViewportSize.y }, ImVec2{ 0, 1 }, ImVec2{ 1, 0 });
 
 		auto windowSize = ImGui::GetWindowSize();
